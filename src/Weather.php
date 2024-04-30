@@ -2,5 +2,6 @@
 namespace nwengerhak\weather;
 Class Weather{
 
+    $weather = [];
 
 }
