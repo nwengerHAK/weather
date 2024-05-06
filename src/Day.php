@@ -1,6 +1,5 @@
 <?php
-
-namespace nwengerhak\weather;
+namespace Nwengerhak\Weather;
 
 class Day
 {
@@ -12,12 +11,12 @@ class Day
         return $this->weather;
     }
 
-    public function getTag(): string
+    public function getDay(): string
     {
         return $this->day;
     }
 
-    public function setTag(string $day): void
+    public function setDay(string $day): void
     {
         $this->day = $day;
     }

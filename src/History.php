@@ -1,16 +1,17 @@
 <?php
-namespace nwengerhak\weather;
-use NwengerHak\weather\Day;
+namespace Nwengerhak\Weather;
+use NwengerHak\Weather\Day;
+
 class History
 {
     private array $history = [];
 
-    public function getVerlauf(): array
+    public function getHistory(): array
     {
         return $this->history;
     }
 
-    public function addToVerlauf(Day $day): void
+    public function addToHistory(Day $day): void
     {
         array_push($this->history,$day);
     }
@@ -22,7 +23,7 @@ class History
     }
     public function getDay($date):string{
         foreach($this->history as $item){
-            if($item->getTag() === $date){
+            if($item->getDay() === $date){
                 return $item->getWeather();
             }
         }
