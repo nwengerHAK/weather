@@ -13,6 +13,7 @@
             "email": "nwenger@schueler.hakzell.at"
         }
     ],
+    "version": "v1.0.0",
     "minimum-stability": "dev",
     "require": {}
 }
